@@ -12,6 +12,8 @@ start = time()
 # 生成一个1000维度的向量c
 c = nd.zeros(shape = 1000)
 
+# 比较遍历和直接相加时间上的差异
+
 # 向量相加的方法1
 for i in range(1000):
     c[i] = a[i] + b[i]

@@ -9,11 +9,9 @@ mnist_train = gdata.vision.FashionMNIST(train = True)
 # 下载测试数据（train = False）表示下载测试数据
 mnist_test = gdata.vision.FashionMNIST(train = False)
 
-# 查看训练数据大小
 # 当前训练数据大小为60000
 print(len(mnist_train))
 
-# 查看测试数据大小
 # 当前测试数据大小为10000
 print(len(mnist_test))
 
@@ -21,6 +19,10 @@ print(len(mnist_test))
 # (feature, label) = (p1, p2)
 # feature, label = (p1, p2)
 # feature, label = mnist_train[0]
+
+# feature   ---     <NDArray 28x28x1 @cpu(0)>
+# 1指的是通道，因为是灰度图像
+# label     ---     2
 feature, label = mnist_train[0]
 
 # Int8, 占1个字节.   有符号整型
@@ -31,9 +33,11 @@ feature, label = mnist_train[0]
 
 # 打印feature的形状
 # 结果为(28, 28, 1)，为高28，宽28，通道为1的灰度图片
+# {tuple:3} 元素空间为3 (28, 28, 1)
 print(feature.shape)
 
 # 打印图数据的类型
+# <class 'numpy.uint8'>
 print(feature.dtype)
 
 # 打印label

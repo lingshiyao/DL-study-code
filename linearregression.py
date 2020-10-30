@@ -153,6 +153,11 @@ for epoch in range(num_epochs):  # 训练模型一共需要num_epochs个迭代�
 
         with autograd.record():
             # 求出损失函数
+            # X     <NDArray 10x2 @cpu(0)>
+            # w     <NDArray 2x1 @cpu(0)>
+            # b     <NDArray 1 @cpu(0)>
+            # y     <NDArray 10 @cpu(0)>
+            # l     <NDArray 10 x1 @ cpu(0)>
             l = loss(net(X, w, b), y)
         # 求梯度，求w和b的导数，然后把数值代入进去
         # 小批量的损失对模型参数求梯度
