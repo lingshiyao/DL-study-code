@@ -15,21 +15,24 @@ print(len(mnist_train))
 # 当前测试数据大小为10000
 print(len(mnist_test))
 
-# 获取 训练数据 和 label
+# --------------获取 训练数据 和 label（python语言特性）--------------------
 # (feature, label) = (p1, p2)
 # feature, label = (p1, p2)
 # feature, label = mnist_train[0]
+# ---------------------------------------------------------------------
 
 # feature   ---     <NDArray 28x28x1 @cpu(0)>
 # 1指的是通道，因为是灰度图像
 # label     ---     2
 feature, label = mnist_train[0]
 
+# ----------------------------python数据类型----------------------------
 # Int8, 占1个字节.   有符号整型
 # Int16, 占2个字节.  有符号整型
 # Int32, 占4个字节.  有符号整型
 # Int64, 占8个字节.  有符号整型
 # uint8, 占8个字节.     0-255
+# ---------------------------------------------------------------------
 
 # 打印feature的形状
 # 结果为(28, 28, 1)，为高28，宽28，通道为1的灰度图片
@@ -65,17 +68,21 @@ def show_fashion_mnist(images, labels):
 
     # d2l.plt.show()
 
+# X 取出10个图片的数据
+# y 取出10个图片对应标签的下标
 X, y = mnist_train[0:9]
+
+# 打印当前取出的数据（把图像打印出来）
 show_fashion_mnist(X, get_fashion_mnist_labels(y))
 
-
+# 批次大小256
 batch_size = 256
 
 # 通过ToTensor将数据从unit8格式变成32位浮点数格式
 transformer = gdata.vision.transforms.ToTensor()
 
 # 0表示不用额外的进程来加速读取数据
-# 当前是windows
+# sys.platform == win32
 if sys.platform.startswith('win'):
     num_workers = 0
 else:
@@ -83,7 +90,9 @@ else:
 
 # 训练数据
 # 把训练数据加载到训练器里面
-# 数据    批次      ??      用来训练的额外进程，当前为0
+# 数据
+# 批次      ??
+# 用来训练的额外进程，当前为0
 train_iter = gdata.DataLoader(mnist_train.transform_first(transformer),
                               batch_size, shuffle=True,
                               num_workers=num_workers)

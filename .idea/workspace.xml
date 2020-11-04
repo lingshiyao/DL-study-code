@@ -20,21 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5734e66-0e9d-4baf-8364-df56615e1c0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gradtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s3_10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s3_10_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s3_11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s3_12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s3_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s3_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classStudy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3_13.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3_16.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s4_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s4_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linearregression.py" beforeDir="false" afterPath="$PROJECT_DIR$/linearregression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s3_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/s3_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/s3_12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/s3_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s3_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/s3_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s3_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/s3_5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s3_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/s3_7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s3_8.py" beforeDir="false" afterPath="$PROJECT_DIR$/s3_8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,14 +55,35 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/s3_2.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/s4_2.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MXNET\DL-study-code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.s3_2">
+  <component name="RunManager" selected="Python.s4_1">
+    <configuration name="classStudy" type="PythonConfigurationType" factoryName="Python">
+      <module name="DL-study-code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\ProgramData\Anaconda3\envs\gluon\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classStudy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="differentialcoefficient " type="PythonConfigurationType" factoryName="Python">
       <module name="DL-study-code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,6 +252,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="s3_13" type="PythonConfigurationType" factoryName="Python">
+      <module name="DL-study-code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\ProgramData\Anaconda3\envs\gluon\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s3_13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="s3_2" type="PythonConfigurationType" factoryName="Python">
       <module name="DL-study-code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -382,6 +420,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="s4_1" type="PythonConfigurationType" factoryName="Python">
+      <module name="DL-study-code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\ProgramData\Anaconda3\envs\gluon\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s4_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="s4_2" type="PythonConfigurationType" factoryName="Python">
+      <module name="DL-study-code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\ProgramData\Anaconda3\envs\gluon\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s4_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.differentialcoefficient " />
       <item itemvalue="Python.gradtest" />
@@ -390,6 +470,10 @@
       <item itemvalue="Python.s3_10_test" />
       <item itemvalue="Python.s3_11" />
       <item itemvalue="Python.s3_12" />
+      <item itemvalue="Python.s3_13" />
+      <item itemvalue="Python.s4_1" />
+      <item itemvalue="Python.s4_2" />
+      <item itemvalue="Python.classStudy" />
       <item itemvalue="Python.s3_1" />
       <item itemvalue="Python.s3_3" />
       <item itemvalue="Python.s3_2" />
@@ -424,67 +508,75 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="447" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604028892536">
+    <state x="447" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604393689847">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028892536" />
+    <state x="447" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604393689847" />
+    <state x="517" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604306362529">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="517" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604306362529" />
     <state x="608" y="302" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1603787930863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="608" y="302" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1536.824@0.0.1536.824" timestamp="1603787930863" />
-    <state x="548" y="179" key="FileChooserDialogImpl" timestamp="1604028891044">
+    <state width="897" height="438" key="DebuggerActiveHint" timestamp="1604392762160">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="179" key="FileChooserDialogImpl/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028891044" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1604028710075">
+    <state width="897" height="438" key="DebuggerActiveHint/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392762160" />
+    <state x="548" y="179" key="FileChooserDialogImpl" timestamp="1604393688257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028710075" />
+    <state x="548" y="179" key="FileChooserDialogImpl/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604393688257" />
+    <state width="1515" height="145" key="GridCell.Tab.0.bottom" timestamp="1604392726634">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="145" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392726634" />
     <state width="1515" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603790527847" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1604028710074">
+    <state width="1515" height="145" key="GridCell.Tab.0.center" timestamp="1604392726634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028710074" />
+    <state width="1515" height="145" key="GridCell.Tab.0.center/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392726634" />
     <state width="1515" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603790527847" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1604028710074">
+    <state width="1515" height="145" key="GridCell.Tab.0.left" timestamp="1604392726634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028710074" />
+    <state width="1515" height="145" key="GridCell.Tab.0.left/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392726634" />
     <state width="1515" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603790527847" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1604028710075">
+    <state width="1515" height="145" key="GridCell.Tab.0.right" timestamp="1604392726634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028710075" />
+    <state width="1515" height="145" key="GridCell.Tab.0.right/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392726634" />
     <state width="1515" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603790527847" />
-    <state width="1515" height="210" key="GridCell.Tab.1.bottom" timestamp="1604028712024">
+    <state width="1515" height="145" key="GridCell.Tab.1.bottom" timestamp="1604392728790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028712024" />
+    <state width="1515" height="145" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392728790" />
     <state width="1515" height="226" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603790527848" />
-    <state width="1515" height="210" key="GridCell.Tab.1.center" timestamp="1604028712024">
+    <state width="1515" height="145" key="GridCell.Tab.1.center" timestamp="1604392728790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028712024" />
+    <state width="1515" height="145" key="GridCell.Tab.1.center/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392728790" />
     <state width="1515" height="226" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603790527848" />
-    <state width="1515" height="210" key="GridCell.Tab.1.left" timestamp="1604028712024">
+    <state width="1515" height="145" key="GridCell.Tab.1.left" timestamp="1604392728790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028712024" />
+    <state width="1515" height="145" key="GridCell.Tab.1.left/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392728790" />
     <state width="1515" height="226" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603790527848" />
-    <state width="1515" height="210" key="GridCell.Tab.1.right" timestamp="1604028712024">
+    <state width="1515" height="145" key="GridCell.Tab.1.right" timestamp="1604392728790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604028712024" />
+    <state width="1515" height="145" key="GridCell.Tab.1.right/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392728790" />
     <state width="1515" height="226" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603790527848" />
-    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1604024695571">
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1604391757567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604024695571" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604391757567" />
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1603788880296" />
-    <state x="323" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603251568610">
+    <state x="323" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604392720971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="323" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1603251568610" />
+    <state x="323" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/-1920.10.1536.824@0.0.1536.824" timestamp="1604392720971" />
     <state x="-1515" y="18" width="1145" height="572" key="dock-window-1" timestamp="1603095090410">
       <screen x="-1920" y="10" width="1536" height="824" />
     </state>
@@ -498,54 +590,39 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_12.py</url>
-          <line>142</line>
-          <option name="timeStamp" value="56" />
+          <url>file://$PROJECT_DIR$/s4_1.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_12.py</url>
-          <line>134</line>
-          <option name="timeStamp" value="58" />
+          <url>file://$PROJECT_DIR$/s4_1.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_12.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_12.py</url>
+          <url>file://$PROJECT_DIR$/s4_1.py</url>
           <line>91</line>
-          <option name="timeStamp" value="62" />
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_12.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="63" />
+          <url>file://$PROJECT_DIR$/s4_1.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_9.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="64" />
+          <url>file://$PROJECT_DIR$/s4_1.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_1.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="65" />
+          <url>file://$PROJECT_DIR$/s4_1.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_1.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_3.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/s3_2.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="70" />
+          <url>file://$PROJECT_DIR$/s4_1.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -556,5 +633,10 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="x" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

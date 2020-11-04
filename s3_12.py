@@ -136,6 +136,8 @@ def fit_and_plot(lambd):
                              train_labels).mean().asscalar())
         test_ls.append(loss(net(test_features, w, b),
                             test_labels).mean().asscalar())
+
+    # 100次的训练，每次训练数据的损失都在降低，但是测试数据的损失一直很高
     d2l.semilogy(range(1, num_epochs + 1), train_ls, 'epochs', 'loss',
                  range(1, num_epochs + 1), test_ls, ['train', 'test'])
 
@@ -147,26 +149,41 @@ def fit_and_plot(lambd):
 
     print('L2 norm of w:', w.norm().asscalar())
 
-fit_and_plot(lambd=0)
+# 观察过拟合（结果训练误差远小于测试集上的误差）
+#fit_and_plot(lambd=0)
 
-fit_and_plot(lambd=3)
+# lambd为3的时候损失有所缓解
+# fit_and_plot(lambd=3)
 
+# 带有惩罚损失的简单实现
 def fit_and_plot_gluon(wd):
+
+    # 定义模型
     net = nn.Sequential()
+
+    # 模型设置为1层
     net.add(nn.Dense(1))
+
+    # 模型初始化为标准差为1的正态分布
     net.initialize(init.Normal(sigma=1))
+
     # 对权重参数衰减。权重名称一般是以weight结尾
+
+    # wd: lambd
     trainer_w = gluon.Trainer(net.collect_params('.*weight'), 'sgd',
                               {'learning_rate': lr, 'wd': wd})
+
     # 不对偏差参数衰减。偏差名称一般是以bias结尾
     trainer_b = gluon.Trainer(net.collect_params('.*bias'), 'sgd',
                               {'learning_rate': lr})
+
     train_ls, test_ls = [], []
     for _ in range(num_epochs):
         for X, y in train_iter:
             with autograd.record():
                 l = loss(net(X), y)
             l.backward()
+            
             # 对两个Trainer实例分别调用step函数，从而分别更新权重和偏差
             trainer_w.step(batch_size)
             trainer_b.step(batch_size)
