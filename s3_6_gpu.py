@@ -1,4 +1,5 @@
 import d2lzh as d2l
+import mxnet as mx
 from mxnet import autograd, nd
 from time import time
 
@@ -20,11 +21,11 @@ num_outputs = 10
 #       784     x   10
 # 生成初始数据W，W为均值是0，标准差为0.01的正态分布
 # （随便填写什么数值，反正后面会用梯度下降来校验）
-W = nd.random.normal(scale=0.01, shape=(num_inputs, num_outputs))
+W = nd.random.normal(scale=0.01, shape=(num_inputs, num_outputs), ctx=mx.gpu())
 
 # y = w(1)1 * x1 + w(1)2 * x2 + w(1)3 * x3 + ...... + w(1)784 * x784 + b(1)
 # 生成偏置数据，初始数值0(长度为10，分别为b(1).b(2).b(3).b(4)......b(10))
-b = nd.zeros(num_outputs)
+b = nd.zeros(num_outputs, ctx=mx.gpu())
 
 # W生成梯度
 W.attach_grad()
@@ -35,7 +36,7 @@ b.attach_grad()
 ##-----X.sum(axis=1, keepdims=True)---------------------------------W
 ##-----求SUM值的测试例子-----------------------------------------------W
 ##------------------------------------------------------------------W
-X = nd.array([[1, 2, 3], [4, 5, 6]])
+X = nd.array([[1, 2, 3], [4, 5, 6]], ctx=mx.gpu())
 
 # 按照列求值
 #   1 2 3
@@ -76,7 +77,7 @@ def softmax(X):
 ##-----softmax功能测试------------------------------------------------W
 ##------------------------------------------------------------------W
 # 生成标准正态分布 2 x 5 测试数据
-X = nd.random.normal(shape=(2, 5))
+X = nd.random.normal(shape=(2, 5), ctx=mx.gpu())
 
 # 使用自定义的softmax函数
 X_prob = softmax(X)
@@ -136,16 +137,17 @@ def net(X):
     # 把256x1x28x28 变成256x784
     # 256x784  784x10  => 256x10
     # softmax(XW + b)
+    X = X.copyto(mx.gpu())
     return softmax(nd.dot(X.reshape((-1, num_inputs)), W) + b)
 
 # 预测值
 # 0.1   0.3   0.6       第一个样本预测取下标为2的0.6的值，最有可能是2的样本
 # 0.3   0.2   0.5       第二个样本预测去下表为2的0.5的值
-y_hat = nd.array([[0.1, 0.3, 0.6], [0.3, 0.2, 0.5]])
+y_hat = nd.array([[0.1, 0.3, 0.6], [0.3, 0.2, 0.5]], ctx=mx.gpu())
 
 # 样本真实的下标
 # 0, 2
-y = nd.array([0, 2], dtype='int32')
+y = nd.array([0, 2], dtype='int32', ctx=mx.gpu())
 
 #----------------------PICK操作-------------------
 # pick是根据下标取值的操作
@@ -224,6 +226,9 @@ print(accuracy(y_hat, y))
 def evaluate_accuracy(data_iter, net):
     acc_sum, n = 0.0, 0
     for X, y in data_iter:
+        X = X.copyto(mx.gpu())
+        y = y.copyto(mx.gpu())
+
         # for每次取出来的是256张图片，可能是训练数据，可能是测试数据
 
         #-----------------------???-----------------------
@@ -292,6 +297,8 @@ def train_ch3(net, train_iter, test_iter, loss, num_epochs, batch_size,
         # n训练数据（训练图片的总数60000）
         train_l_sum, train_acc_sum, n = 0.0, 0.0, 0
         for X, y in train_iter:
+            X = X.copyto(mx.gpu())
+            y = y.copyto(mx.gpu())
             # 每次取出256张图片数据，参考下面打印的结果
             # X <NDArray 256x1x28x28 @cpu(0)>
             # y <NDArray 256 @cpu(0)>
@@ -379,7 +386,7 @@ titles = [true + '\n' + pred for true, pred in zip(true_labels, pred_labels)]
 d2l.show_fashion_mnist(X[0:9], titles[0:9])
 # d2l.plt.show()
 
-# 22.080242395401
-# 22.875707149505615
-# 21.316385984420776
+# 21.011157751083374
+# 21.24990487098694
+
 print(time() - start)
