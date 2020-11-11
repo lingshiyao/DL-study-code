@@ -2,6 +2,13 @@ import d2lzh as d2l
 from mxnet import autograd, gluon, init, nd
 from mxnet.gluon import nn
 
+# X
+# gamma
+# beta
+# moving_mean
+# moving_var
+# eps
+# momentum
 def batch_norm(X, gamma, beta, moving_mean, moving_var, eps, momentum):
     # 通过autograd来判断当前模式是训练模式还是预测模式
     if not autograd.is_training():

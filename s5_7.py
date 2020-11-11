@@ -31,6 +31,7 @@ for blk in net:
     X = blk(X)
     print(blk.name, 'output shape:\t', X.shape)
 
+# 比例
 ratio = 4
 small_conv_arch = [(pair[0], pair[1] // ratio) for pair in conv_arch]
 net = vgg(small_conv_arch)

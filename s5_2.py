@@ -9,6 +9,7 @@ def comp_conv2d(conv2d, X):
     # (8 8) => (1 1 8 8)
     X = X.reshape((1, 1) + X.shape)
     Y = conv2d(X)
+    #                       裁剪
     return Y.reshape(Y.shape[2:])  # 排除不关心的前两维：批量和通道
 
 # 注意这里是两侧分别填充1行或列，所以在两侧一共填充2行或列

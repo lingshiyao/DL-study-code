@@ -16,7 +16,8 @@ net.add(nin_block(96, kernel_size=11, strides=4, padding=0),
         nin_block(256, kernel_size=5, strides=1, padding=2),
         nn.MaxPool2D(pool_size=3, strides=2),
         nin_block(384, kernel_size=3, strides=1, padding=1),
-        nn.MaxPool2D(pool_size=3, strides=2), nn.Dropout(0.5),
+        nn.MaxPool2D(pool_size=3, strides=2),
+        nn.Dropout(0.5),
         # 标签类别数是10
         nin_block(10, kernel_size=3, strides=1, padding=1),
         # 全局平均池化层将窗口形状自动设置成输入的高和宽
